@@ -9,6 +9,10 @@
     padding: 48px 0 96px;
 }
 
-.page-template .site-content {
-    padding-block: 0;
+.page-template .gh-article-header {
+    margin-top: 0;
+}
+
+.page-template .gh-content:only-child>:first-child:not(.kg-width-full) {
+    margin-top: 0;
 }

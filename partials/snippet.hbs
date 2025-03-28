@@ -1,0 +1,17 @@
+<div class="snippet">
+  <article class="{{post_class}} gh-article">
+      <div class="gh-canvas">
+        <header class="gh-article-header">
+          <h1 class="gh-article-title">
+            <a class="post-title-link" href="{{url}}">{{title}}</a>
+          </h1>
+        </header>
+
+        {{#if excerpt}}
+          <div class="gh-content">
+            {{excerpt characters="140"}}… <a href="{{url}}">Read More</a>
+          </div>
+        {{/if}}
+      </div>
+  </article>
+</div>

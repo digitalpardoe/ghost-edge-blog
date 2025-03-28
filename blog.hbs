@@ -1,0 +1,15 @@
+{{#contentFor "title"}}Blog{{plural pagination.page empty='' singular='' plural=' – (Page %)'}}{{/contentFor}}
+
+{{!< default}}
+
+<div class="content-area">
+<main class="site-main">
+    {{#foreach posts}}
+      {{> "snippet"}}
+    {{/foreach}}
+
+    <div class="gh-canvas gh-content">
+      {{pagination}}
+    </div>
+</main>
+</div>

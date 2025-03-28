@@ -1,3 +1,5 @@
+{{#contentFor "title"}}{{meta_title}}{{/contentFor}}
+
 {{!< default}}
 
 <div class="content-area">
@@ -28,10 +30,6 @@
     {{/if}}
 
     {{/post}}
-
-    {{#if @custom.show_related_posts}}
-        {{> "related-posts"}}
-    {{/if}}
 
 </main>
 </div>
