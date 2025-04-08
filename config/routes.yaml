@@ -1,15 +1,18 @@
 routes:
+  /blog/:
+    controller: channel
+    filter: tag:blog
 
 collections:
   /:
     permalink: /photo/{slug}/
     template: index
-    filter: primary_tag:photo
+    filter: tag:photo
 
   /blog/:
     permalink: /blog/{slug}/
     template: blog
-    filter: primary_tag:blog
+    filter: tag:blog
 
 taxonomies:
   ## Nothing but silence
