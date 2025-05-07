@@ -17,6 +17,8 @@ function feed() {
             stamp: '.related-title',
             hiddenStyle: {transform: 'translateY(50px)', opacity: 0},
             visibleStyle: {transform: 'translateY(0)', opacity: 1},
+            transitionDuration: '0.4s',
+            stagger: '0.03s',
         });
 
         masonry.on('layoutComplete', function () {
